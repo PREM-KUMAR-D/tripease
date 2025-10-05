@@ -1,18 +1,16 @@
-package com.example.tripease.dto.request;
+package com.example.tripease.dto.response;
 
-import com.example.tripease.Enum.Gender;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
-@Getter
-@AllArgsConstructor
 @NoArgsConstructor
-public class CustomerRequest {
+@AllArgsConstructor
+@Getter
+@Setter
+public class CustomerResponse {
     private String name;
     private int age;
     private String emailId;
-    private Gender gender;
 }
