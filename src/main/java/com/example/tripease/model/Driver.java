@@ -14,9 +14,9 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name="driver_info")
 public class Driver {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int driverId;
     private String name;
     private int age;
