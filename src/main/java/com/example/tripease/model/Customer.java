@@ -23,6 +23,8 @@ public class Customer {
     private String name;
     private int age;
     private String emailId;
+
+    @Enumerated(value=EnumType.STRING)
     private Gender gender;
 
     @OneToMany(cascade = CascadeType.ALL)
